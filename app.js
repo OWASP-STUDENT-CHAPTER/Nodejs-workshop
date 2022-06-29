@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
-const dbURI = 'mongodb+srv://admin_task:hello123@cluster0.njoion9.mongodb.net/?retryWrites=true&w=majority';
+const dbURI = 'YOUR STRING';
 mongoose.connect(dbURI)
     .then(() => {
         console.log('MONGODB connected');
